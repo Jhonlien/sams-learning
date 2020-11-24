@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Sams</title>
+    </head>
+    <body>
+        <div id=apaantuh></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $.ajax({
+                url : 'http://localhost:3000/',
+                success: function(result){
+                    $("#apaantuh").html(result);
+                }
+            })
+        })
+        </script>
+    </body>
+</html>
